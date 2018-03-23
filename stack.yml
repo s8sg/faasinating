@@ -1,0 +1,12 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080  # can be a remote server
+
+functions:
+  entranslator: 
+    lang: dockerfile
+    handler: ./GoogleTranslator
+    image: functions/entranslator:latest
+    environment:
+      http_proxy: http://labproxy.cdnetworks.com:8000
+      https_proxy: http://labproxy.cdnetworks.com:8000
