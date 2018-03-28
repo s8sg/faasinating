@@ -1,0 +1,19 @@
+[
+  {
+    "icon": "https://commons.wikimedia.org/wiki/File:Google_Translate_Icon.png",
+    "title": "ENTranslate",
+    "description": "Translate Anything to English",
+    "image": "faasinating/translate",
+    "name": "ENTranslate",
+    "fprocess": "python -u index.py",
+    "network": "func_functions",
+    "repo_url": "https://github.com/faasinating/faasinating",
+    "labels": {
+      "com.openfaas.ui.ext": "png"
+    },
+    "environment": {
+      "http_gateway": "http://labproxy.cdnetworks.com:8000",
+      "https_gateway": "http://labproxy.cdnetworks.com:8000"
+    }
+  }
+]
