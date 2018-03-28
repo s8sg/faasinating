@@ -5,7 +5,7 @@ provider:
 functions:
   entranslator: 
     lang: dockerfile
-    handler: ./GoogleTranslator
+    handler: ./ENTranslator
     image: functions/entranslator:latest
     environment:
       http_proxy: http://labproxy.cdnetworks.com:8000
